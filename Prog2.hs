@@ -41,8 +41,6 @@ orderTriple (t1, t2, t3) =((maxOfThree t1 t2 t3), (middleOfThree t1 t2 t3), (min
 swap :: (Char, Char, Char, Char) -> (Char, Char, Char, Char)
 swap (c1, c2, c3, c4) = (c4, c3, c2, c1)
 
---asciiNums
-
 --matches
 matches :: Integer -> [Integer] -> [Integer]
 matches a1 a2 = [a3 | a3 <- a2, a3 == a1]
