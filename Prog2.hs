@@ -1,15 +1,15 @@
--- Hannah Metzler 
-module Prog2 where
+{- Name: Hannah Metzler
+Date: 2/21/19
+Homework 2 -}
 
---fromIntegral :: Int -> Float
---round :: Float -> Int
+module Prog2 where
 
 --sum function adds all values from 1 to x
 sum' :: Integer -> Integer
 sum' 0 = 0
 sum' x = x + sum' (x - 1)
 
---integerSqrt
+--integerSqrt 
 integerSqrt :: Integer -> Integer
 integerSqrt num1 = (floor(sqrt(num1))
 
