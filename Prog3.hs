@@ -47,4 +47,7 @@ or' (x:xs) = x || or' xs
 --iSort' :: [(Float, Int, String)] -> [(Float, Int, String)]
 
 --merge takes two sorted lists and merges them into a single sorted list
---merge :: [Int] -> [Int] -> [Int]
+merge :: [Int] -> [Int] -> [Int]
+merge as [] = as
+merge [] bs = bs
+merge (a:as) (b:bs) = a b merge as bs
