@@ -21,7 +21,8 @@ init'' (x:xs) = init'' xs
 
 --elemAt returns the ith item of the list where first item is index 1
 elemAt :: Int -> [Int] -> Int
---elemAt a b 
+elemAt 1 (y:ys) = y
+elemAt n (z:zs) = elemAt (n-1) zs
 
 --numTimes returns the # of times that an element occurs in a list using recurs$
 numTimes :: Int -> [Int] -> Int
